@@ -1,19 +1,29 @@
 ## List Docker CLI commands
+
+```
 docker
 docker container --help
+```
 
 ## Display Docker version and info
+```
 docker --version
 docker version
 docker info
+```
 
 ## Execute Docker image
+```
 docker run hello-world
+```
 
 ## List Docker images
+```
 docker image ls
+```
 
 ## List Docker containers (running, all, all in quiet mode)
+```
 docker container ls
 docker container ls --all
 docker container ls -aq
@@ -44,9 +54,6 @@ docker container ls -q                                      # List container IDs
 docker stack rm <appname>                             # Tear down an application
 docker swarm leave --force      # Take down a single node swarm from the manager
 
-
-# Part 4
-
 docker-machine create --driver virtualbox myvm1 # Create a VM (Mac, Win7, Linux)
 docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1 # Win10
 docker-machine env myvm1                # View basic information about your node
@@ -70,3 +77,4 @@ docker-machine stop $(docker-machine ls -q)               # Stop all running VMs
 docker-machine rm $(docker-machine ls -q) # Delete all VMs and their disk images
 
 
+```
