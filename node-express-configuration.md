@@ -17,6 +17,11 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 ```
 
+## Use Express JSON
+```javascript
+app.use(express.json())
+```
+
 ## Express serve
 ```javascript
 app.listen(3000, () => {
